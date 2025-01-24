@@ -1,14 +1,11 @@
 
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../helpers/constants.dart';
 
-
-
 class LoginNotifier extends StateNotifier<AppState> {
-  LoginNotifier(this.ref) : super(AppState.initial);
+  LoginNotifier(this.ref) : super(AppState.success);
 
   final Ref ref;
 

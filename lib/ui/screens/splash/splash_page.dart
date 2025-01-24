@@ -5,28 +5,24 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../helpers/constants.dart';
 
-class LoginPage extends ConsumerWidget {
-  const LoginPage({super.key});
+class SplashPage extends ConsumerWidget {
+  const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final loginState = ref.watch(loginProvider);
-    final controller = ref.read(loginProvider.notifier);
+    final splashState = ref.watch(splashProvider);
+    final controller = ref.read(splashProvider.notifier);
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Login', style: TextStyle(color: Colors.black)),
-        automaticallyImplyLeading: false,
-      ),
       body: Builder(
           builder: (context){
-            switch (loginState) {
+            switch (splashState) {
               case AppState.loading:
               // TODO: Handle this case.
                 throw UnimplementedError();
               case AppState.success:
-                return const Center(child: Text('Login successful!', style: TextStyle(color: Colors.black)));
+                return const Center(child: Text('Splash', style: TextStyle(color: Colors.black)));
               case AppState.error:
                 // TODO: Handle this case.
                 throw UnimplementedError();
