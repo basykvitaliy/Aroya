@@ -2,8 +2,6 @@ enum AppState {
   loading,
   success,
   error,
-  errorFirebase,
-  uploadImages,
   login,
   logOut,
 }

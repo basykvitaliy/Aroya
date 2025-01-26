@@ -24,4 +24,12 @@ class ColorsApp {
   static const Color greyScale200 = Color(0xFFE3E8EF);
   static const Color greyScale100 = Color(0xFFF2F5F9);
   static const Color greyScale50 = Color(0xFFF8FAFC);
+  static const Color white = Color(0xFFFFFFFF);
+
+  /// Gradient
+  static const Color gradientEnd2 = Color(0xFF114950);
+  static const Color gradientEnd = Color(0xFF218D9A);
+  static const Color gradientCentral = Color(0xFF1DA3A9);
+  static const Color gradientStart = Color(0xFF18BAB8);
+  /// Gradient
 }

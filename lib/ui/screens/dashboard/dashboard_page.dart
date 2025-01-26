@@ -26,12 +26,6 @@ class DashboardPage extends ConsumerWidget {
               case AppState.error:
                 // TODO: Handle this case.
                 throw UnimplementedError();
-              case AppState.errorFirebase:
-                // TODO: Handle this case.
-                throw UnimplementedError();
-              case AppState.uploadImages:
-                // TODO: Handle this case.
-                throw UnimplementedError();
               case AppState.login:
                 // TODO: Handle this case.
                 throw UnimplementedError();
