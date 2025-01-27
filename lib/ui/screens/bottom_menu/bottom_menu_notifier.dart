@@ -9,6 +9,6 @@ class BottomMenuNotifier extends StateNotifier<AppState> {
 
   final Ref ref;
 
-  final selectedIndex = StateProvider<int>((ref) => 0);
+  final selectedIndex = StateProvider<int>((ref) => 1);
 
 }

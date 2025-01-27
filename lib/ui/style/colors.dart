@@ -25,6 +25,7 @@ class ColorsApp {
   static const Color greyScale100 = Color(0xFFF2F5F9);
   static const Color greyScale50 = Color(0xFFF8FAFC);
   static const Color white = Color(0xFFFFFFFF);
+  static const Color background = Color(0xFFECF4FB);
 
   /// Gradient
   static const Color gradientEnd2 = Color(0xFF114950);
