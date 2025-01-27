@@ -1,0 +1,16 @@
+String login="Login";
+String singUp="Sign Up";
+String continueText="המשך";
+String phoneNumber="Phone number";
+String sendCode='בלחיצת כפתור "שלחו לי קוד אימות", הנך מאשר/ת את';
+String userTerms='תנאי השימוש והפרטיות';
+String logInto="היכנס לחשבון קיים";
+String didntReceiveCode="לא קיבלתי קוד";
+String notMyNumber="לא הטלפון שלי";
+String email="email";
+String password="password";
+String faceId="Face ID";
+String loginWithFaceId="Face ID כניסה באמצעות";
+String forYouConvenience="לנוחותך ולהקלת הכניסה למערכת, ניתן להגדיר זיהוי באמצעות Face ID";
+String orLoginUsingSetPassword="או להתחבר באמצעות סיסמה שהגדרת בעבר";
+String skip="Skip";

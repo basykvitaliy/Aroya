@@ -1,7 +1,9 @@
 import 'package:aroya/ui/screens/bottom_menu/bottom_menu.dart';
+import 'package:aroya/ui/screens/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 void main() {
@@ -20,7 +22,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.rtl,
-      child: MaterialApp(
+      child:ScreenUtilInit(
+        designSize: const Size(375, 812),
+    minTextAdapt: true,
+    splitScreenMode: true,
+    child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Aroya',
         locale: Locale('he'),
@@ -36,8 +42,8 @@ class MyApp extends StatelessWidget {
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        home: BottomMenu(),
-      ),
+        home:LoginPage() // BottomMenu(),
+      ),),
     );
   }
 }

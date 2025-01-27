@@ -45,5 +45,7 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSFaceIDUsageDescription</key>
+    <string>For you convenience and easy access to the system, you can set up identification using Face ID</string>
 </dict>
 </plist>
