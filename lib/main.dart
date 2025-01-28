@@ -29,8 +29,9 @@ class MyApp extends StatelessWidget {
     child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Aroya',
-        locale: Locale('he'),
+        locale: Locale('en'),
         supportedLocales: [
+          Locale('en'),
           Locale('he')
         ],
         theme: ThemeData(
