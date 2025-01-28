@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 void main() {
   runApp(
     const ProviderScope(
@@ -22,29 +21,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.rtl,
-      child:ScreenUtilInit(
+      child: ScreenUtilInit(
         designSize: const Size(375, 812),
-    minTextAdapt: true,
-    splitScreenMode: true,
-    child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Aroya',
-        locale: Locale('en'),
-        supportedLocales: [
-          Locale('en'),
-          Locale('he')
-        ],
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        localizationsDelegates: [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        home:LoginPage() // BottomMenu(),
-      ),),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Aroya',
+            locale: Locale('en'),
+            supportedLocales: [Locale('en'), Locale('he')],
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              useMaterial3: true,
+            ),
+            localizationsDelegates: [
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            home: LoginPage() // BottomMenu(),
+            ),
+      ),
     );
   }
 }
